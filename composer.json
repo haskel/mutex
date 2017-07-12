@@ -1,0 +1,35 @@
+{
+  "name": "haskel/mutex",
+  "type": "library",
+  "description": "Mutex Component",
+  "keywords": [],
+  "homepage": "http://haskel.io/dev/component/mutex",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pavel Khaskel",
+      "email": "haskel.pavel@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.6"
+  },
+  "require-dev": {
+    "psr/log": "~1.0"
+  },
+  "suggest": {
+    "predis/predis": "For using redis as storage"
+  },
+  "autoload": {
+    "psr-4": { "Haskel\\Component\\Mutex\\": "" },
+    "exclude-from-classmap": [
+      "/Tests/"
+    ]
+  },
+  "minimum-stability": "dev",
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1-dev"
+    }
+  }
+}

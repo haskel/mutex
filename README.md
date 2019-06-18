@@ -13,7 +13,7 @@ Basic usage
 ```php
 use Haskel\Component\Mutex\MutexManager;
 use Haskel\Component\Mutex\Mutex\PlainMutex;
-&
+
 $mutexManager = new MutexManager();
 $mutex = new PlainMutex('SOME_UNIQUE_STRING');
 $mutexManager->acquire($mutex);
@@ -26,7 +26,7 @@ To release everytime if exception throws
 ```php
 use Haskel\Component\Mutex\MutexManager;
 use Haskel\Component\Mutex\Mutex\PlainMutex;
-&
+
 $mutexManager = new MutexManager();
 $mutex = new PlainMutex('SOME_UNIQUE_STRING');
 $mutexManager->acquire($mutex);
@@ -43,17 +43,9 @@ Try to acquire within 20 seconds
 ```php
 use Haskel\Component\Mutex\MutexManager;
 use Haskel\Component\Mutex\Mutex\PlainMutex;
-&
+
 $mutexManager = new MutexManager();
 $mutex = new PlainMutex('SOME_UNIQUE_STRING');
 $mutexManager->acquire($mutex, 20);
 // .......
 ```
-
-Resources
----------
-
-  * [Documentation](https://symfony.com/doc/current/components/security/index.html)
-  * [Contributing](https://symfony.com/doc/current/contributing/index.html)
-  * [Report issues](https://github.com/symfony/symfony/issues) and
-    [send Pull Requests](https://github.com/symfony/symfony/pulls)
